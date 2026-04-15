@@ -1,17 +1,40 @@
 /* Dynamic Background */
 const backgrounds = [
-    "background_images//BG1.jpg",
-    "background_images//BG2.jpg",
-    "background_images//BG3.jpg",
-    "background_images//BG4.jpg",
-    "background_images//BG5.jpg"
+    "background_images/BG1.jpg",
+    "background_images/BG2.jpg",
+    "background_images/BG3.jpg",
+    "background_images/BG4.jpg",
+    "background_images/BG5.jpg"
 ];
 
-let bgIndex = 0;
+let current = 0;
+let active = 1;
+
+const bg1 = document.getElementById("bg1");
+const bg2 = document.getElementById("bg2");
+
+/* preload images */
+backgrounds.forEach(src => {
+    const img = new Image();
+    img.src = src;
+});
 
 function changeBackground() {
-    document.body.style.backgroundImage = `url(${backgrounds[bgIndex]})`;
-    bgIndex = (bgIndex + 1) % backgrounds.length;
+    const next = backgrounds[current];
+
+    if (active === 1) {
+        bg2.style.backgroundImage = `url(${next})`;
+        bg2.style.opacity = 1;
+        bg1.style.opacity = 0;
+        active = 2;
+    } else {
+        bg1.style.backgroundImage = `url(${next})`;
+        bg1.style.opacity = 1;
+        bg2.style.opacity = 0;
+        active = 1;
+    }
+
+    current = (current + 1) % backgrounds.length;
 }
 
 setInterval(changeBackground, 4000);
