@@ -153,6 +153,69 @@ a:hover {
     color: black;
 }
 
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    nav h1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .hero-buttons button {
+        width: 90%;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1, h2, h3 {
+        text-align: center;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+button {
+    min-height: 40px;
+    font-size: 14px;
+}
+
 /* Animation */
 @keyframes fadeIn {
     from { opacity: 0; }
