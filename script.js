@@ -48,7 +48,7 @@ function showSection(section) {
         content.innerHTML = `
             <div class="hero">
                 <h1>Hi, I'm Issacraja 👋</h1>
-                <h3>Quality Assurance Engineer | Manual & Automation Testing | Web & Mobile | Java | JavaScript | TypeScript | Playwright | Selenium</h3>
+                <h3>Senior Software Test Engineer | Manual & Automation Testing | Web & Mobile | Java | JavaScript | TypeScript | Playwright | Selenium</h3>
                 <p>
                     I combine sharp manual testing instincts with scalable automation frameworks to deliver high-quality software.  
                 </p>
