@@ -65,7 +65,7 @@ function showSection(section) {
         content.innerHTML = `
             <h2>About Me</h2>
             <div class="card">
-            I'm a Quality Assurance Engineer with 3+ years of experience in software testing, specializing in test automation using
+            I'm a Senior Software Test Engineer with 3+ years of experience in software testing, specializing in test automation using
             Selenium with Java and Playwright with JavaScript/TypeScript. Proven experience in designing, developing and maintaining 
             end-to-end automation frameworks to enhance test coverage and improve regression efficiency. Experienced in Web testing, 
             Mobile testing, API testing, cross browser testing and CI/CD pipeline integration. Proficient in Docker and AWS for 
@@ -135,6 +135,7 @@ function loadSkills() {
         { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
         { name: "Playwright", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/playwright/playwright-original.svg" },
         { name: "Selenium", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" },
+        { name: "Cursor", icon: "skills_images//Cursor.svg" },
         { name: "TestNG", icon: "skills_images//TestNG.svg" },
         { name: "Cucumber", icon: "skills_images//Cucumber.svg" },
         { name: "Maven", icon: "skills_images//Apache Maven.svg" },
@@ -144,6 +145,7 @@ function loadSkills() {
         { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
         { name: "Postman", icon: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" },
         { name: "Jira", icon: "skills_images//Jira.svg" },
+        { name: "XRay", icon: "skills_images//Xray.svg" },
         { name: "IntelliJ IDEA", icon: "skills_images//IntelliJ IDEA.svg" },
         { name: "Visual Studio Code", icon: "skills_images//Visual Studio Code (VS Code).svg" }
     ];
