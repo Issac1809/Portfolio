@@ -65,7 +65,7 @@ function showSection(section) {
         content.innerHTML = `
             <h2>About Me</h2>
             <div class="card">
-            I'm a Senior Software Test Engineer with 3+ years of experience in software testing, specializing in test automation using
+            I'm a Senior Software Test Engineer with 4+ years of experience in software testing, specializing in test automation using
             Selenium with Java and Playwright with JavaScript/TypeScript. Proven experience in designing, developing and maintaining 
             end-to-end automation frameworks to enhance test coverage and improve regression efficiency. Experienced in Web testing, 
             Mobile testing, API testing, cross browser testing and CI/CD pipeline integration. Proficient in Docker and AWS for 
