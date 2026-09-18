@@ -1,32 +1,711 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-    <title>Issac Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Issacraja - Senior Software Test Engineer specializing in QA automation, API testing, web and mobile testing, and quality engineering."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Issacraja | Senior Software Test Engineer</title>
+    <link rel="stylesheet" href="style.css?v=20260918-0500" />
+  </head>
 
-<div id="bg1" class="bg-layer"></div>
-<div id="bg2" class="bg-layer"></div>
+  <body>
+    <div id="bg1" class="bg-layer" aria-hidden="true"></div>
+    <div id="bg2" class="bg-layer" aria-hidden="true"></div>
 
-<body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Go to home section">
+          <span class="brand-name">Issacraja. C</span>
+          <span class="brand-role">Software Test Engineer</span>
+        </a>
 
-<nav>
-    <h1>Issac | Senior Software Test Engineer</h1>
-    <ul>
-        <li onclick="showSection('home')">Home</li>
-        <li onclick="showSection('about')">About</li>
-        <li onclick="showSection('skills')">Skills</li>
-        <li onclick="showSection('projects')">Projects</li>
-        <li onclick="showSection('contact')">Contact</li>
-        <li onclick="showSection('profiles')">Profiles</li>
-    </ul>
-</nav>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-<div id="content"></div>
+        <div class="nav-panel" id="navPanel">
+          <ul class="nav-menu">
+            <li><a class="nav-link is-active" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#experience">Experience</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
 
-<script src="script.js"></script>
-</body>
+          <div class="nav-actions">
+            <a class="btn btn-secondary btn-small nav-cta" href="Issacraja_QA_Engineer_Resume.pdf" download>Download Resume</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-content container">
+      <section id="home" class="section hero-section">
+        <div class="hero-copy">
+          <p class="eyebrow"><strong>HI, I'M</strong></p>
+          <h1>ISSACRAJA</h1>
+          <h2>Software Test Engineer - 4+ Years Experience</h2>
+          <p class="hero-keywords"><strong>Manual Testing • Test Automation • API Testing</strong></p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View My Work <span aria-hidden="true"></span></a>
+          </div>
+        </div>
+
+        <aside class="stlc-card glass-card" aria-label="Software Testing Life Cycle overview">
+          <div class="stlc-header">
+            <div class="stlc-header-copy">
+              <span class="stlc-kicker">MY TESTING APPROACH</span>
+            </div>
+          </div>
+
+          <div class="stlc-list" aria-live="polite">
+            <button class="stlc-stage is-active" type="button" aria-pressed="true">
+              <span class="stage-rail" aria-hidden="true"></span>
+             <span class="stage-body">
+               <span class="stage-head">
+                 <span class="stage-title">Requirement Analysis</span>
+               </span>
+               <span class="stage-description">Identify testable requirements.</span>
+             </span>
+           </button>
+
+           <button class="stlc-stage" type="button" aria-pressed="false">
+             <span class="stage-rail" aria-hidden="true"></span>
+             <span class="stage-body">
+               <span class="stage-head">
+                 <span class="stage-title">Test Planning</span>
+               </span>
+               <span class="stage-description">Define testing scope and strategy.</span>
+             </span>
+           </button>
+
+           <button class="stlc-stage" type="button" aria-pressed="false">
+             <span class="stage-rail" aria-hidden="true"></span>
+             <span class="stage-body">
+               <span class="stage-head">
+                 <span class="stage-title">Test Case Development</span>
+               </span>
+               <span class="stage-description">Design scenarios and test cases.</span>
+             </span>
+           </button>
+
+           <button class="stlc-stage" type="button" aria-pressed="false">
+             <span class="stage-rail" aria-hidden="true"></span>
+             <span class="stage-body">
+               <span class="stage-head">
+                 <span class="stage-title">Environment Setup</span>
+               </span>
+               <span class="stage-description">Prepare environment and test data.</span>
+             </span>
+           </button>
+
+           <button class="stlc-stage" type="button" aria-pressed="false">
+             <span class="stage-rail" aria-hidden="true"></span>
+             <span class="stage-body">
+               <span class="stage-head">
+                 <span class="stage-title">Test Execution</span>
+               </span>
+               <span class="stage-description">Execute tests and report defects.</span>
+             </span>
+           </button>
+
+           <button class="stlc-stage" type="button" aria-pressed="false">
+             <span class="stage-rail" aria-hidden="true"></span>
+             <span class="stage-body">
+               <span class="stage-head">
+                 <span class="stage-title">Test Closure</span>
+               </span>
+               <span class="stage-description">Analyze results and close testing.</span>
+             </span>
+           </button>
+          </div>
+        </aside>
+
+        <a class="scroll-indicator" href="#about" aria-label="Scroll to explore">
+          <span class="scroll-indicator-label">EXPLORE</span>
+          <span class="scroll-indicator-arrow" aria-hidden="true">
+            <span class="scroll-indicator-chevron"></span>
+          </span>
+        </a>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="section-heading">
+          <span class="section-number">01</span>
+          <div>
+            <p class="eyebrow">About</p>
+            <h3>Quality-focused engineer with a testing-first mindset.</h3>
+          </div>
+        </div>
+
+        <div class="about-main">
+          <div class="about-content glass-card">
+            <p>
+              I'm a Senior Software Test Engineer with 4+ years of experience in both manual and automation testing,
+              focused on delivering quality across Web, Mobile, AI and API-based applications. My work combines
+              functional testing, regression testing, integration testing, smoke and sanity checks, exploratory
+              testing and automation-driven validation.
+            </p>
+            <p>
+              I specialize in building and maintaining automated test frameworks using Selenium with Java and
+              Playwright with JavaScript/TypeScript, while also understanding the broader QA lifecycle through
+              test case design, defect reporting, cross-browser testing and CI/CD integration. This approach helps
+              ensure reliable software quality from early validation through release readiness.
+            </p>
+
+            <div class="about-actions">
+              <a class="btn btn-primary" href="#contact">Let's Connect</a>
+            </div>
+          </div>
+
+          <div class="about-visual glass-card" aria-label="Professional profile illustration">
+            <div class="profile-card">
+              <div class="profile-image-wrapper">
+                <img src="Issacraja Photo.png" alt="Issacraja portrait" />
+              </div>
+              <div class="quality-badge">
+                <span class="panel-dot"></span>
+                <span>Quality Engineering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mini-features">
+          <article class="mini-card glass-card">
+            <h4>Problem Solver</h4>
+          </article>
+          <article class="mini-card glass-card">
+            <h4>Team Player</h4>
+          </article>
+          <article class="mini-card glass-card">
+            <h4>Continuous Learner</h4>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section experience-section">
+        <div class="section-heading">
+          <span class="section-number">02</span>
+          <div>
+            <p class="eyebrow">Experience</p>
+            <h3>My professional journey</h3>
+          </div>
+        </div>
+
+      <!-- <section id="experience" class="section experience-section">
+        <div class="section-heading center-heading">
+          <p class="eyebrow">03 — Experience</p>
+          <h3>My Professional Journey</h3>
+        </div> -->
+
+        <div class="timeline">
+          <article class="timeline-item glass-card current-role">
+            <div class="timeline-card">
+              <span class="timeline-bullet" aria-hidden="true"></span>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="timeline-meta">
+                    <span class="timeline-role">Senior Software Engineer</span>
+                    <span class="timeline-company">Creative Synergies Group</span>
+                    <span class="timeline-location">Bengaluru, Karnataka, India</span>
+                  </div>
+                  <span class="timeline-date">2026 - Present</span>
+                </div>
+                <!-- <p>On-site</p> -->
+                <div class="timeline-badges">
+                  <!-- <span>CI/CD</span>
+                  <span>Agile Testing</span> -->
+                  <span>Quality Engineering</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item glass-card">
+            <div class="timeline-card">
+              <span class="timeline-bullet" aria-hidden="true"></span>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="timeline-meta">
+                    <span class="timeline-role">Quality Assurance Engineer</span>
+                    <span class="timeline-company">Izmo Ltd</span>
+                    <span class="timeline-location">Bengaluru, Karnataka, India</span>
+                  </div>
+                  <span class="timeline-date">2025 - 2026</span>
+                </div>
+                <!-- <p>Conducted Functional, Regression, Integration, User Acceptance, Smoke, Sanity, API and UI testing for both Web and Mobile applications to ensure software quality and reliability.</p> -->
+                <div class="timeline-badges">
+                  <!-- <span>Functional Testing</span>
+                  <span>Regression Testing</span>
+                  <span>Integration Testing</span>
+                  <span>UAT</span>
+                  <span>Smoke Testing</span>
+                  <span>Sanity Testing</span>
+                  <span>API Testing</span>
+                  <span>UI Testing</span>
+                  <span>Mobile Testing</span> -->
+                  <span>Quality Engineering</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item glass-card">
+            <div class="timeline-card">
+              <span class="timeline-bullet" aria-hidden="true"></span>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="timeline-meta">
+                    <span class="timeline-role">Software Test Engineer</span>
+                    <span class="timeline-company">CormSquare</span>
+                    <span class="timeline-location">Bengaluru, Karnataka, India</span>
+                  </div>
+                  <span class="timeline-date">2022 - 2025</span>
+                </div>
+                <!-- <p>Led a team of 5 software test engineers and provided guidance to ensure high-quality deliverables.</p> -->
+                <div class="timeline-badges">
+                  <!-- <span>Team Leadership</span>
+                  <span>Test Strategy</span> -->
+                  <span>Quality Engineering</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- <article class="timeline-item glass-card">
+            <div class="timeline-card">
+              <span class="timeline-bullet" aria-hidden="true"></span>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="timeline-meta">
+                    <span class="timeline-role">Junior Test Engineer</span>
+                    <span class="timeline-company">CormSquare</span>
+                    <span class="timeline-location">Bengaluru, Karnataka, India</span>
+                  </div>
+                  <span class="timeline-date">2022 — 2023</span>
+                </div>
+                <p>Collaborated with cross-functional teams to identify and resolve critical defects during sprint cycles.</p>
+                <div class="timeline-badges">
+                  <span>Defect Reporting</span>
+                  <span>Cross-functional QA</span>
+                  <span>Sprint Cycles</span>
+                </div>
+              </div>
+            </div>
+          </article> -->
+
+          <article class="timeline-item glass-card">
+            <div class="timeline-card">
+              <span class="timeline-bullet" aria-hidden="true"></span>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="timeline-meta">
+                    <span class="timeline-role">Document Analyst</span>
+                    <span class="timeline-company">CAP Digisoft Solutions Inc.</span>
+                    <span class="timeline-location">Coimbatore, Tamil Nadu, India</span>
+                  </div>
+                  <span class="timeline-date">2019 - 2022</span>
+                </div>
+                <!-- <p>On-site</p> -->
+                <div class="timeline-badges">
+                  <!-- <span>Documentation</span> -->
+                  <span>Documentation Process Review</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills-section">
+        <div class="section-heading">
+          <span class="section-number">03</span>
+          <div>
+            <p class="eyebrow">Skills</p>
+            <h3>QA expertise across manual and automated testing.</h3>
+          </div>
+        </div>
+
+      <!-- <section id="skills" class="section skills-section">
+        <div class="section-heading center-heading">
+          <p class="eyebrow">Skills</p>
+          <h3>Balanced QA expertise across manual and automated testing.</h3>
+        </div> -->
+
+        <div class="skills-marquee-border-wrapper">
+          <div class="skills-marquee-wrap">
+            <div class="marquee-row marquee-row-1" aria-label="Manual testing skills ticker">
+              <div class="marquee-viewport">
+                <div class="marquee-track">
+                  <div class="marquee-group">
+                    <span class="skill-pill"><span class="skill-tick"></span> Functional Testing</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> Regression Testing</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> Integration Testing</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> System Testing</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> Smoke Testing</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> Sanity Testing</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> Exploratory Testing</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> API Testing</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> Cross-browser Testing</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> AI Agent Testing</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> Mobile Testing</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> Test Plan Creation</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> Test Case Design</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> Defect Reporting</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> Test Execution</span>
+                  </div>
+                  <div class="marquee-group" aria-hidden="true">
+                    <span class="skill-pill"><span class="skill-tick"></span> Functional Testing</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> Regression Testing</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> Integration Testing</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> System Testing</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> Smoke Testing</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> Sanity Testing</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> Exploratory Testing</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> API Testing</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> Cross-browser Testing</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> AI Agent Testing</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> Mobile Testing</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> Test Plan Creation</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> Test Case Design</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> Defect Reporting</span>
+                    <span class="skill-pill"><span class="skill-tick"></span> Test Execution</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="marquee-row marquee-row-2" aria-label="Automation and tools skills ticker">
+              <div class="marquee-viewport">
+                <div class="marquee-track">
+                  <div class="marquee-group">
+                    <span class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java icon" aria-hidden="true" />Java</span>
+                    <span class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="Selenium icon" aria-hidden="true" />Selenium</span>
+                    <span class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/playwright/playwright-original.svg" alt="Playwright icon" aria-hidden="true" />Playwright</span>
+                    <span class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript icon" aria-hidden="true" />JavaScript</span>
+                    <span class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript icon" aria-hidden="true" />TypeScript</span>
+                    <span class="skill-pill"><img src="skills_images/TestNG.svg" alt="TestNG icon" aria-hidden="true" />TestNG</span>
+                    <span class="skill-pill"><img src="skills_images/Cucumber.svg" alt="Cucumber icon" aria-hidden="true" />Cucumber</span>
+                    <span class="skill-pill"><img src="skills_images/Apache Maven.svg" alt="Maven icon" aria-hidden="true" />Maven</span>
+                    <span class="skill-pill"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman icon" aria-hidden="true" />Postman</span>
+                    <span class="skill-pill"><img src="skills_images/Jira.svg" alt="Jira icon" aria-hidden="true" />Jira</span>
+                    <span class="skill-pill"><img src="skills_images/Xray.svg" alt="Xray icon" aria-hidden="true" />Xray</span>
+                    <span class="skill-pill"><img src="skills_images/IntelliJ IDEA.svg" alt="IntelliJ IDEA icon" aria-hidden="true" />IntelliJ IDEA</span>
+                    <span class="skill-pill"><img src="skills_images/Visual Studio Code (VS Code).svg" alt="VS Code icon" aria-hidden="true" />VS Code</span>
+                    <span class="skill-pill"><img src="skills_images/Cursor.svg" alt="Cursor icon" aria-hidden="true" />Cursor</span>
+                    <span class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub icon" aria-hidden="true" />GitHub</span>
+                    <span class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker icon" aria-hidden="true" />Docker</span>
+                    <span class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins icon" aria-hidden="true" />Jenkins</span>
+                    <span class="skill-pill"><img src="skills_images/AWS.svg" alt="AWS icon" aria-hidden="true" />AWS</span>
+                  </div>
+
+                  <div class="marquee-group" aria-hidden="true">
+                    <span class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java icon" aria-hidden="true" />Java</span>
+                    <span class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="Selenium icon" aria-hidden="true" />Selenium</span>
+                    <span class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/playwright/playwright-original.svg" alt="Playwright icon" aria-hidden="true" />Playwright</span>
+                    <span class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript icon" aria-hidden="true" />JavaScript</span>
+                    <span class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript icon" aria-hidden="true" />TypeScript</span>
+                    <span class="skill-pill"><img src="skills_images/TestNG.svg" alt="TestNG icon" aria-hidden="true" />TestNG</span>
+                    <span class="skill-pill"><img src="skills_images/Cucumber.svg" alt="Cucumber icon" aria-hidden="true" />Cucumber</span>
+                    <span class="skill-pill"><img src="skills_images/Apache Maven.svg" alt="Maven icon" aria-hidden="true" />Maven</span>
+                    <span class="skill-pill"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman icon" aria-hidden="true" />Postman</span>
+                    <span class="skill-pill"><img src="skills_images/Jira.svg" alt="Jira icon" aria-hidden="true" />Jira</span>
+                    <span class="skill-pill"><img src="skills_images/Xray.svg" alt="Xray icon" aria-hidden="true" />Xray</span>
+                    <span class="skill-pill"><img src="skills_images/IntelliJ IDEA.svg" alt="IntelliJ IDEA icon" aria-hidden="true" />IntelliJ IDEA</span>
+                    <span class="skill-pill"><img src="skills_images/Visual Studio Code (VS Code).svg" alt="VS Code icon" aria-hidden="true" />VS Code</span>
+                    <span class="skill-pill"><img src="skills_images/Cursor.svg" alt="Cursor icon" aria-hidden="true" />Cursor</span>
+                    <span class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub icon" aria-hidden="true" />GitHub</span>
+                    <span class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker icon" aria-hidden="true" />Docker</span>
+                    <span class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins icon" aria-hidden="true" />Jenkins</span>
+                    <span class="skill-pill"><img src="skills_images/AWS.svg" alt="AWS icon" aria-hidden="true" />AWS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects-section">
+        <div class="section-heading">
+          <span class="section-number">04</span>
+          <div>
+            <p class="eyebrow">Projects</p>
+            <h3>Real-world testing experience</h3>
+          </div>
+        </div>
+
+      <!-- <section id="projects" class="section projects-section">
+        <div class="section-heading center-heading">
+          <p class="eyebrow">Projects</p>
+          <h3>Real-world testing experience across web, API, automation, and AI-driven applications.</h3>
+        </div> -->
+
+        <div class="project-grid">
+
+          <article class="project-card glass-card">
+            <div class="project-card-header">
+              <div>
+                <h4>Quest Agent</h4>
+              </div>
+              <span class="project-badge">AI Agent Testing</span>
+            </div>
+            <p class="project-summary">Validated an AI-powered RAG assistant designed to retrieve and provide information from Knowledge Items and Quality Issues.</p>
+            <ul class="project-points">
+              <li>Prompt validation</li>
+              <li>RAG response testing</li>
+              <li>Source reference validation</li>
+              <li>Hallucination testing</li>
+            </ul>
+            <button class="project-link" data-project="quest-agent" type="button">View Details</button>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-card-header">
+              <div>
+                <h4>System Design Agent</h4>
+              </div>
+              <span class="project-badge">AI Agent Testing</span>
+            </div>
+            <p class="project-summary">Validated an AI-powered RAG assistant designed to retrieve and provide information from M365, Service Matrix, Legacy and Mech Templates.</p>
+            <ul class="project-points">
+              <li>Prompt validation</li>
+              <li>RAG response testing</li>
+              <li>Source reference validation</li>
+              <li>Hallucination testing</li>
+            </ul>
+            <button class="project-link" data-project="system-design-agent" type="button">View Details</button>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-card-header">
+              <div>
+                <h4>Resource Hub Agent</h4>
+              </div>
+              <span class="project-badge">AI Agent Testing</span>
+            </div>
+            <p class="project-summary">Validated an AI-powered RAG assistant designed to retrieve and provide information from Quality Issues and SharePoint.</p>
+            <ul class="project-points">
+              <li>Prompt validation</li>
+              <li>RAG response testing</li>
+              <li>Source reference validation</li>
+              <li>Hallucination testing</li>
+            </ul>
+            <button class="project-link" data-project="pwr-resource-hub-agent" type="button">View Details</button>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-card-header">
+              <div>
+                <h4>HR Review Agent</h4>
+              </div>
+              <span class="project-badge">AI Agent Testing</span>
+            </div>
+            <p class="project-summary">Validated an AI-powered RAG assistant designed to retrieve and rate individual employees in the organization from Cornerstone, Outlook and OneNote.</p>
+            <ul class="project-points">
+              <li>Prompt validation</li>
+              <li>RAG response testing</li>
+              <li>Source reference validation</li>
+              <li>Hallucination testing</li>
+            </ul>
+            <button class="project-link" data-project="hr-review-agent" type="button">View Details</button>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-card-header">
+              <div>
+                <h4>Execution+</h4>
+              </div>
+              <span class="project-badge">Web App Testing</span>
+            </div>
+            <p class="project-summary">Validated an transmission foundation design & line design workflows, including Excel-based imports, geotechnical mapping, foundation rules and calculations.</p>
+            <ul class="project-points">
+              <li>Functional validation</li>
+              <li>Regression testing</li>
+            </ul>
+            <button class="project-link" data-project="execution-plus" type="button">View Details</button>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-card-header">
+              <div>
+                <h4>NIA Networks</h4>
+              </div>
+              <span class="project-badge">Web App Testing</span>
+            </div>
+            <p class="project-summary">Validated an engineering automation platform that generates network deliverables including DWG, PDF, Excel and DOCX outputs from NetBox data using a microservices-based architecture and AutoCAD automation.</p>
+            <ul class="project-points">
+              <li>Functional validation</li>
+              <li>Regression testing</li>
+              <li>API testing</li>
+            </ul>
+            <button class="project-link" data-project="nia-networks" type="button">View Details</button>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-card-header">
+              <div>
+                <h4>Career Development Platform</h4>
+              </div>
+              <span class="project-badge">Power App Testing</span>
+            </div>
+            <p class="project-summary">Validated an enterprise Talent Intelligence and Career Development Platform supporting employee skill management, assessments, career development, supervisor dashboards and leadership analytics.</p>
+            <ul class="project-points">
+              <li>Functional validation</li>
+              <li>Regression testing</li>
+              <li>UI testing</li>
+            </ul>
+            <button class="project-link" data-project="career-development-platform" type="button">View Details</button>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-card-header">
+              <div>
+                <h4>DistrigoBoost</h4>
+              </div>
+              <span class="project-badge">Web & Mob App Testing</span>
+            </div>
+            <p class="project-summary">Validated an digital automotive parts ordering and dealer support platform used across global Stellantis networks.</p>
+            <ul class="project-points">
+              <li>Functional validation</li>
+              <li>Regression testing</li>
+            </ul>
+            <button class="project-link" data-project="distrigoboost" type="button">View Details</button>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-card-header">
+              <div>
+                <h4>Flauraud</h4>
+              </div>
+              <span class="project-badge">Web & Mob App Testing</span>
+            </div>
+            <p class="project-summary">Validated an digital automotive parts ordering and dealer support platform used across Europe.</p>
+            <ul class="project-points">
+              <li>Functional validation</li>
+              <li>Regression testing</li>
+            </ul>
+            <button class="project-link" data-project="flauraud" type="button">View Details</button>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-card-header">
+              <div>
+                <h4>Frogdata</h4>
+              </div>
+              <span class="project-badge">Web & Mob App Testing</span>
+            </div>
+            <p class="project-summary">Validated an advanced analytics and BI platform designed for automotive dealerships to optimize sales, service performance and operational decision-making.</p>
+            <ul class="project-points">
+              <li>Functional validation</li>
+              <li>Regression testing</li>
+            </ul>
+            <button class="project-link" data-project="frogdata" type="button">View Details</button>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-card-header">
+              <div>
+                <h4>HDFC P2P</h4>
+              </div>
+              <span class="project-badge">Web App Testing</span>
+            </div>
+            <p class="project-summary">Validated an e-procurement platform (P2P) that connects end users and suppliers, enhancing procurement efficiency by automating purchase orders, invoices and payment processes. It significantly reduces procurement cycle times.</p>
+            <ul class="project-points">
+              <li>Functional validation</li>
+              <li>Regression testing</li>
+            </ul>
+            <button class="project-link" data-project="hdfc-p2p" type="button">View Details</button>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-card-header">
+              <div>
+                <h4>Yokogawa GePS</h4>
+              </div>
+              <span class="project-badge">Web App Testing</span>
+            </div>
+            <p class="project-summary">Validated an e-procurement application, providing a supply chain platform (P2P) between end users and suppliers. This platform enhances procurement efficiency by automating purchase orders, invoices and payment processes, thereby reducing procurement cycle times.</p>
+            <ul class="project-points">
+              <li>Functional validation</li>
+              <li>Regression testing</li>
+            </ul>
+            <button class="project-link" data-project="yokogawa-geps" type="button">View Details</button>
+          </article>
+
+        </div>
+      </section>
+
+      <div class="project-modal" id="project-modal" aria-hidden="true">
+        <div class="project-modal-dialog glass-card" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+          <button class="project-modal-close" id="project-modal-close" type="button" aria-label="Close project details">×</button>
+          <p class="modal-kicker">Project Details</p>
+          <h4 id="project-modal-title">Project</h4>
+          <div id="project-modal-body"></div>
+        </div>
+      </div>
+
+      <section id="contact" class="section contact-section">
+        <div class="contact-panel glass-card">
+          <p class="eyebrow">Let’s Connect</p>
+          <h3>Have an opportunity or want to discuss testing, automation or technology?</h3>
+          <a class="btn btn-primary" href="mailto:issacraja1809@gmail.com">Send Email <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="social-grid">
+          <a class="social-card glass-card" href="https://www.linkedin.com/in/issac-c-8aa79617b/" target="_blank" rel="noreferrer">
+            <span>LinkedIn</span>
+            <small>Professional profile</small>
+          </a>
+          <a class="social-card glass-card" href="https://www.naukri.com/mnjuser/profile" target="_blank" rel="noreferrer">
+            <span>Naukri</span>
+            <small>Career profile</small>
+          </a>
+          <a class="social-card glass-card" href="https://github.com/Issac1809" target="_blank" rel="noreferrer">
+            <span>GitHub</span>
+            <small>Code &amp; projects</small>
+          </a>
+          <a class="social-card glass-card" href="mailto:issacraja1809@gmail.com">
+            <span>Email</span>
+            <small>issacraja1809@gmail.com</small>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="footer-title">ISSACRAJA</p>
+          <p class="footer-role">Software Test Engineer</p>
+        </div>
+
+      </div>
+
+      <div class="container footer-bottom">
+        <span>© 2026 Issacraja</span>
+      </div>
+    </footer>
+
+    <script src="script.js?v=20260918-0045"></script>
+  </body>
 </html>
